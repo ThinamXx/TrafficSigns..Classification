@@ -62,6 +62,7 @@
 
 **Convolutional Neural Network**
 - In deep learning, a convolutional neural network is a class of deep neural networks, most commonly applied to analyzing visual imagery. They are also known as shift invariant or space invariant artificial neural networks, based on their shared-weights architecture and translation invariance characteristics.
+- Convolutional Neural Network are fully connected feed forward Neural Networks. Convolutional Neural Networks are very effective in reducing the number of parameters with losing on the quality of the models. Images have the high dimensionality which suits the above described abilities of the Convolutional Neural Networks.
 
 ```javascript
 model = tf.keras.models.Sequential([
@@ -86,9 +87,13 @@ model = tf.keras.models.Sequential([
   
   ![Image](https://res.cloudinary.com/dge89aqpc/image/upload/v1599626424/Hey_heil1n.png)
   
+  - As the Training Accuracy increases then the Validation Accuracy also increases.
+  
   - Plotting Training Loss vs Validation Loss
   
   ![Image](https://res.cloudinary.com/dge89aqpc/image/upload/v1599626504/Hey2_etpkcf.png)
+  
+  - As the Training Loss decreases then the Validation Loss also decreases.
 
 **Snapshot of the Predicted Image**
 
