@@ -64,29 +64,32 @@
 - In deep learning, a convolutional neural network is a class of deep neural networks, most commonly applied to analyzing visual imagery. They are also known as shift invariant or space invariant artificial neural networks, based on their shared-weights architecture and translation invariance characteristics.
 
 ```javascript
-# Building the Convolutional Neural Network.
 model = tf.keras.models.Sequential([
-                                    # The first convolution
-                                    # Input image has 1 byte color
                                     tf.keras.layers.Conv2D(16, (3, 3), activation="relu", input_shape=(32, 32, 1)),
                                     tf.keras.layers.MaxPooling2D(2, 2),
-                                    # The second convolution
                                     tf.keras.layers.Conv2D(32, (3, 3), activation="relu"),
                                     tf.keras.layers.MaxPooling2D(2, 2),
-                                    # The third convolution
                                     tf.keras.layers.Conv2D(64, (3, 3), activation="relu"),
                                     tf.keras.layers.MaxPooling2D(2, 2),
-                                    # Adding Dropout to the Neural Network
                                     tf.keras.layers.Dropout(0.2),
-                                    # Flatten the Deep Neural Network
                                     tf.keras.layers.Flatten(),
-                                    # First dense layer
                                     tf.keras.layers.Dense(512, activation="relu"),
-                                    # Second dense layer
                                     tf.keras.layers.Dense(120, activation="relu"),
-                                    # Third dense layer
                                     tf.keras.layers.Dense(84, activation="relu"),
-                                    # Final layer of the Convolutional Neural Network
                                     tf.keras.layers.Dense(43, activation="softmax")                                   
 ])
 ```
+
+**Model Evaluation**
+
+  - Plotting Training Accuracy vs Validation Accuracy
+  
+  ![Image](https://res.cloudinary.com/dge89aqpc/image/upload/v1599626424/Hey_heil1n.png)
+  
+  - Plotting Training Loss vs Validation Loss
+  
+  ![Image](https://res.cloudinary.com/dge89aqpc/image/upload/v1599626504/Hey2_etpkcf.png)
+
+**Snapshot of the Predicted Image**
+
+![Image](https://res.cloudinary.com/dge89aqpc/image/upload/v1599626599/Predict_nn167z.png)
